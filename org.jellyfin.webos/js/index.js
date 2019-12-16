@@ -45,8 +45,8 @@ function rightArrowPressed() {
     // Your stuff here
 }
 
-document.onkeydown = function (evt) {
-    evt = evt || window.event;
+
+document.addEventListener("onkeydown", function (evt) {
     switch (evt.keyCode) {
         case 37:
             leftArrowPressed();
@@ -61,7 +61,7 @@ document.onkeydown = function (evt) {
             downArrowPressed();
             break;
     }
-};
+});
 
 function handleCheckbox(elem, evt) {
     console.log(elem);
